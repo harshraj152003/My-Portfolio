@@ -38,7 +38,7 @@ MyPortfolio/
 
 🌐 Live Demo
 You can visit the live version here:
-🔗 https://harshraj152003.github.io/My-Portfolio (Update link if hosted)
+🔗 https://harshraj152003.github.io/My-Portfolio
 
 
 Make your portfolio not just a website—but a statement. Thank you for visiting!

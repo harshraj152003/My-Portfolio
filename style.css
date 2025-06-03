@@ -1,0 +1,305 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #0e1a47; /* Dark background for more techy feel */
+    line-height: 1.6;
+  }
+
+  .typewriter-text{
+    color: red;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+    position: relative;
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease infinite;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-out;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+
+  .cta-button2{
+    position: relative;
+    top: 20px;
+    left: 23px;
+  }
+  
+  .linkedin-card {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .linkedin-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .linkedin-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .linkedin-button {
+    padding: 8px 20px;
+    background-color: #0077b5;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .linkedin-button:hover {
+    background-color: #005a8d;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2575fc;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .about img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bio {
+    max-width: 600px;
+  }
+  
+  .skills ul {
+    margin-top: 20px;
+    list-style: none;
+  }
+  
+  .skills li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+    position: relative;
+  }
+  
+  .skills li::before {
+    content: '➤';
+    position: absolute;
+    left: -20px;
+    color: #2575fc;
+    font-size: 1.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Photography Gallery Section */
+  .photography-gallery {
+    padding: 60px 20px;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  .photography-gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2575fc;
+  }
+
+  .photography-gallery p{
+    color: #333;
+  }
+  
+  .image-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 30px;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .slide:hover {
+    transform: scale(1.05);
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .caption {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #2575fc;
+  }
+  
+  /* College Life Section */
+  .college-life {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+    color: #333;
+  }
+  
+  .college-life h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2575fc;
+  }
+  
+  .college-photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .college-photos img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .college-photos img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #2575fc;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  /* Animations */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
